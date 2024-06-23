@@ -1,0 +1,600 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BF25A3192C2667CE00C64BB5 /* OpusDecoder.docc in Sources */ = {isa = PBXBuildFile; fileRef = BF25A3182C2667CE00C64BB5 /* OpusDecoder.docc */; };
+		BF25A31F2C2667CE00C64BB5 /* OpusDecoder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF25A3142C2667CE00C64BB5 /* OpusDecoder.framework */; };
+		BF25A3242C2667CE00C64BB5 /* OpusDecoderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF25A3232C2667CE00C64BB5 /* OpusDecoderTests.swift */; };
+		BF25A3252C2667CE00C64BB5 /* OpusDecoder.h in Headers */ = {isa = PBXBuildFile; fileRef = BF25A3172C2667CE00C64BB5 /* OpusDecoder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BF25A34F2C26696C00C64BB5 /* OpusDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF25A34E2C26696C00C64BB5 /* OpusDecoder.swift */; };
+		BF25A3842C266C2B00C64BB5 /* OpusFileDecoder.mm in Sources */ = {isa = PBXBuildFile; fileRef = BF25A3722C266C2B00C64BB5 /* OpusFileDecoder.mm */; };
+		BF25A3852C266C2B00C64BB5 /* HuyaDecoder.h in Headers */ = {isa = PBXBuildFile; fileRef = BF25A3752C266C2B00C64BB5 /* HuyaDecoder.h */; };
+		BF25A3862C266C2B00C64BB5 /* Constants.h in Headers */ = {isa = PBXBuildFile; fileRef = BF25A3762C266C2B00C64BB5 /* Constants.h */; };
+		BF25A3872C266C2C00C64BB5 /* HuyaEncoder.h in Headers */ = {isa = PBXBuildFile; fileRef = BF25A3772C266C2B00C64BB5 /* HuyaEncoder.h */; };
+		BF25A3882C266C2C00C64BB5 /* HuyaEncoder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF25A3782C266C2B00C64BB5 /* HuyaEncoder.cpp */; };
+		BF25A3892C266C2C00C64BB5 /* HuyaDecoder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF25A3792C266C2B00C64BB5 /* HuyaDecoder.cpp */; };
+		BF25A38A2C266C2C00C64BB5 /* opus.h in Headers */ = {isa = PBXBuildFile; fileRef = BF25A37C2C266C2B00C64BB5 /* opus.h */; };
+		BF25A38B2C266C2C00C64BB5 /* opus_multistream.h in Headers */ = {isa = PBXBuildFile; fileRef = BF25A37D2C266C2B00C64BB5 /* opus_multistream.h */; };
+		BF25A38C2C266C2C00C64BB5 /* opus_custom.h in Headers */ = {isa = PBXBuildFile; fileRef = BF25A37E2C266C2B00C64BB5 /* opus_custom.h */; };
+		BF25A38D2C266C2C00C64BB5 /* opus_types.h in Headers */ = {isa = PBXBuildFile; fileRef = BF25A37F2C266C2B00C64BB5 /* opus_types.h */; };
+		BF25A38E2C266C2C00C64BB5 /* opus_defines.h in Headers */ = {isa = PBXBuildFile; fileRef = BF25A3802C266C2B00C64BB5 /* opus_defines.h */; };
+		BF25A38F2C266C2C00C64BB5 /* opus_projection.h in Headers */ = {isa = PBXBuildFile; fileRef = BF25A3812C266C2B00C64BB5 /* opus_projection.h */; };
+		BF25A3902C266C2C00C64BB5 /* libopus.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BF25A3822C266C2B00C64BB5 /* libopus.a */; };
+		BF25A3912C266C2C00C64BB5 /* OpusFileDecoder.h in Headers */ = {isa = PBXBuildFile; fileRef = BF25A3832C266C2B00C64BB5 /* OpusFileDecoder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BF25A3202C2667CE00C64BB5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BF25A30B2C2667CE00C64BB5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BF25A3132C2667CE00C64BB5;
+			remoteInfo = OpusDecoder;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BF25A3142C2667CE00C64BB5 /* OpusDecoder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OpusDecoder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF25A3172C2667CE00C64BB5 /* OpusDecoder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpusDecoder.h; sourceTree = "<group>"; };
+		BF25A3182C2667CE00C64BB5 /* OpusDecoder.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = OpusDecoder.docc; sourceTree = "<group>"; };
+		BF25A31E2C2667CE00C64BB5 /* OpusDecoderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OpusDecoderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF25A3232C2667CE00C64BB5 /* OpusDecoderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpusDecoderTests.swift; sourceTree = "<group>"; };
+		BF25A34E2C26696C00C64BB5 /* OpusDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpusDecoder.swift; sourceTree = "<group>"; };
+		BF25A3722C266C2B00C64BB5 /* OpusFileDecoder.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = OpusFileDecoder.mm; sourceTree = "<group>"; };
+		BF25A3752C266C2B00C64BB5 /* HuyaDecoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HuyaDecoder.h; sourceTree = "<group>"; };
+		BF25A3762C266C2B00C64BB5 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		BF25A3772C266C2B00C64BB5 /* HuyaEncoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HuyaEncoder.h; sourceTree = "<group>"; };
+		BF25A3782C266C2B00C64BB5 /* HuyaEncoder.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HuyaEncoder.cpp; sourceTree = "<group>"; };
+		BF25A3792C266C2B00C64BB5 /* HuyaDecoder.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HuyaDecoder.cpp; sourceTree = "<group>"; };
+		BF25A37C2C266C2B00C64BB5 /* opus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opus.h; sourceTree = "<group>"; };
+		BF25A37D2C266C2B00C64BB5 /* opus_multistream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opus_multistream.h; sourceTree = "<group>"; };
+		BF25A37E2C266C2B00C64BB5 /* opus_custom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opus_custom.h; sourceTree = "<group>"; };
+		BF25A37F2C266C2B00C64BB5 /* opus_types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opus_types.h; sourceTree = "<group>"; };
+		BF25A3802C266C2B00C64BB5 /* opus_defines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opus_defines.h; sourceTree = "<group>"; };
+		BF25A3812C266C2B00C64BB5 /* opus_projection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opus_projection.h; sourceTree = "<group>"; };
+		BF25A3822C266C2B00C64BB5 /* libopus.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libopus.a; sourceTree = "<group>"; };
+		BF25A3832C266C2B00C64BB5 /* OpusFileDecoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpusFileDecoder.h; sourceTree = "<group>"; };
+		BF25A3922C266CA400C64BB5 /* OpusFileDecoder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = OpusFileDecoder.h; path = OpusDecoder/OpusFileDecoder/OpusFileDecoder.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BF25A3112C2667CE00C64BB5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF25A3902C266C2C00C64BB5 /* libopus.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF25A31B2C2667CE00C64BB5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF25A31F2C2667CE00C64BB5 /* OpusDecoder.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BF25A30A2C2667CE00C64BB5 = {
+			isa = PBXGroup;
+			children = (
+				BF25A3922C266CA400C64BB5 /* OpusFileDecoder.h */,
+				BF25A3162C2667CE00C64BB5 /* OpusDecoder */,
+				BF25A3222C2667CE00C64BB5 /* OpusDecoderTests */,
+				BF25A3152C2667CE00C64BB5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BF25A3152C2667CE00C64BB5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BF25A3142C2667CE00C64BB5 /* OpusDecoder.framework */,
+				BF25A31E2C2667CE00C64BB5 /* OpusDecoderTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BF25A3162C2667CE00C64BB5 /* OpusDecoder */ = {
+			isa = PBXGroup;
+			children = (
+				BF25A3172C2667CE00C64BB5 /* OpusDecoder.h */,
+				BF25A3712C266C2B00C64BB5 /* OpusFileDecoder */,
+				BF25A34E2C26696C00C64BB5 /* OpusDecoder.swift */,
+				BF25A3182C2667CE00C64BB5 /* OpusDecoder.docc */,
+			);
+			path = OpusDecoder;
+			sourceTree = "<group>";
+		};
+		BF25A3222C2667CE00C64BB5 /* OpusDecoderTests */ = {
+			isa = PBXGroup;
+			children = (
+				BF25A3232C2667CE00C64BB5 /* OpusDecoderTests.swift */,
+			);
+			path = OpusDecoderTests;
+			sourceTree = "<group>";
+		};
+		BF25A3712C266C2B00C64BB5 /* OpusFileDecoder */ = {
+			isa = PBXGroup;
+			children = (
+				BF25A3722C266C2B00C64BB5 /* OpusFileDecoder.mm */,
+				BF25A3732C266C2B00C64BB5 /* huya */,
+				BF25A37A2C266C2B00C64BB5 /* opus-1.3.1 */,
+				BF25A3832C266C2B00C64BB5 /* OpusFileDecoder.h */,
+			);
+			path = OpusFileDecoder;
+			sourceTree = "<group>";
+		};
+		BF25A3732C266C2B00C64BB5 /* huya */ = {
+			isa = PBXGroup;
+			children = (
+				BF25A3742C266C2B00C64BB5 /* include */,
+				BF25A3782C266C2B00C64BB5 /* HuyaEncoder.cpp */,
+				BF25A3792C266C2B00C64BB5 /* HuyaDecoder.cpp */,
+			);
+			path = huya;
+			sourceTree = "<group>";
+		};
+		BF25A3742C266C2B00C64BB5 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				BF25A3752C266C2B00C64BB5 /* HuyaDecoder.h */,
+				BF25A3762C266C2B00C64BB5 /* Constants.h */,
+				BF25A3772C266C2B00C64BB5 /* HuyaEncoder.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		BF25A37A2C266C2B00C64BB5 /* opus-1.3.1 */ = {
+			isa = PBXGroup;
+			children = (
+				BF25A37B2C266C2B00C64BB5 /* include */,
+				BF25A3822C266C2B00C64BB5 /* libopus.a */,
+			);
+			path = "opus-1.3.1";
+			sourceTree = "<group>";
+		};
+		BF25A37B2C266C2B00C64BB5 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				BF25A37C2C266C2B00C64BB5 /* opus.h */,
+				BF25A37D2C266C2B00C64BB5 /* opus_multistream.h */,
+				BF25A37E2C266C2B00C64BB5 /* opus_custom.h */,
+				BF25A37F2C266C2B00C64BB5 /* opus_types.h */,
+				BF25A3802C266C2B00C64BB5 /* opus_defines.h */,
+				BF25A3812C266C2B00C64BB5 /* opus_projection.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		BF25A30F2C2667CE00C64BB5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF25A38A2C266C2C00C64BB5 /* opus.h in Headers */,
+				BF25A3912C266C2C00C64BB5 /* OpusFileDecoder.h in Headers */,
+				BF25A3852C266C2B00C64BB5 /* HuyaDecoder.h in Headers */,
+				BF25A3252C2667CE00C64BB5 /* OpusDecoder.h in Headers */,
+				BF25A3872C266C2C00C64BB5 /* HuyaEncoder.h in Headers */,
+				BF25A3862C266C2B00C64BB5 /* Constants.h in Headers */,
+				BF25A38D2C266C2C00C64BB5 /* opus_types.h in Headers */,
+				BF25A38F2C266C2C00C64BB5 /* opus_projection.h in Headers */,
+				BF25A38C2C266C2C00C64BB5 /* opus_custom.h in Headers */,
+				BF25A38E2C266C2C00C64BB5 /* opus_defines.h in Headers */,
+				BF25A38B2C266C2C00C64BB5 /* opus_multistream.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		BF25A3132C2667CE00C64BB5 /* OpusDecoder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF25A3282C2667CE00C64BB5 /* Build configuration list for PBXNativeTarget "OpusDecoder" */;
+			buildPhases = (
+				BF25A30F2C2667CE00C64BB5 /* Headers */,
+				BF25A3102C2667CE00C64BB5 /* Sources */,
+				BF25A3112C2667CE00C64BB5 /* Frameworks */,
+				BF25A3122C2667CE00C64BB5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OpusDecoder;
+			productName = OpusDecoder;
+			productReference = BF25A3142C2667CE00C64BB5 /* OpusDecoder.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		BF25A31D2C2667CE00C64BB5 /* OpusDecoderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF25A32B2C2667CE00C64BB5 /* Build configuration list for PBXNativeTarget "OpusDecoderTests" */;
+			buildPhases = (
+				BF25A31A2C2667CE00C64BB5 /* Sources */,
+				BF25A31B2C2667CE00C64BB5 /* Frameworks */,
+				BF25A31C2C2667CE00C64BB5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BF25A3212C2667CE00C64BB5 /* PBXTargetDependency */,
+			);
+			name = OpusDecoderTests;
+			productName = OpusDecoderTests;
+			productReference = BF25A31E2C2667CE00C64BB5 /* OpusDecoderTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BF25A30B2C2667CE00C64BB5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					BF25A3132C2667CE00C64BB5 = {
+						CreatedOnToolsVersion = 15.2;
+						LastSwiftMigration = 1520;
+					};
+					BF25A31D2C2667CE00C64BB5 = {
+						CreatedOnToolsVersion = 15.2;
+					};
+				};
+			};
+			buildConfigurationList = BF25A30E2C2667CE00C64BB5 /* Build configuration list for PBXProject "OpusDecoder" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BF25A30A2C2667CE00C64BB5;
+			productRefGroup = BF25A3152C2667CE00C64BB5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BF25A3132C2667CE00C64BB5 /* OpusDecoder */,
+				BF25A31D2C2667CE00C64BB5 /* OpusDecoderTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BF25A3122C2667CE00C64BB5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF25A31C2C2667CE00C64BB5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BF25A3102C2667CE00C64BB5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF25A3842C266C2B00C64BB5 /* OpusFileDecoder.mm in Sources */,
+				BF25A34F2C26696C00C64BB5 /* OpusDecoder.swift in Sources */,
+				BF25A3192C2667CE00C64BB5 /* OpusDecoder.docc in Sources */,
+				BF25A3892C266C2C00C64BB5 /* HuyaDecoder.cpp in Sources */,
+				BF25A3882C266C2C00C64BB5 /* HuyaEncoder.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF25A31A2C2667CE00C64BB5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF25A3242C2667CE00C64BB5 /* OpusDecoderTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BF25A3212C2667CE00C64BB5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BF25A3132C2667CE00C64BB5 /* OpusDecoder */;
+			targetProxy = BF25A3202C2667CE00C64BB5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		BF25A3262C2667CE00C64BB5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		BF25A3272C2667CE00C64BB5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		BF25A3292C2667CE00C64BB5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = FRZ9RMZ2ZY;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/OpusDecoder/OpusFileDecoder/opus-1.3.1",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = HL.OpusDecoder;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/OpusDecoder/OpusFileDecoder",
+					"$(PROJECT_DIR)/OpusDecoder/OpusFileDecoder/opus-1.3.1/include",
+					"$(PROJECT_DIR)/OpusDecoder/OpusFileDecoder/huya/include",
+				);
+			};
+			name = Debug;
+		};
+		BF25A32A2C2667CE00C64BB5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = FRZ9RMZ2ZY;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/OpusDecoder/OpusFileDecoder/opus-1.3.1",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = HL.OpusDecoder;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/OpusDecoder/OpusFileDecoder",
+					"$(PROJECT_DIR)/OpusDecoder/OpusFileDecoder/opus-1.3.1/include",
+					"$(PROJECT_DIR)/OpusDecoder/OpusFileDecoder/huya/include",
+				);
+			};
+			name = Release;
+		};
+		BF25A32C2C2667CE00C64BB5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FRZ9RMZ2ZY;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = HL.OpusDecoderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BF25A32D2C2667CE00C64BB5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FRZ9RMZ2ZY;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = HL.OpusDecoderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BF25A30E2C2667CE00C64BB5 /* Build configuration list for PBXProject "OpusDecoder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF25A3262C2667CE00C64BB5 /* Debug */,
+				BF25A3272C2667CE00C64BB5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BF25A3282C2667CE00C64BB5 /* Build configuration list for PBXNativeTarget "OpusDecoder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF25A3292C2667CE00C64BB5 /* Debug */,
+				BF25A32A2C2667CE00C64BB5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BF25A32B2C2667CE00C64BB5 /* Build configuration list for PBXNativeTarget "OpusDecoderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF25A32C2C2667CE00C64BB5 /* Debug */,
+				BF25A32D2C2667CE00C64BB5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BF25A30B2C2667CE00C64BB5 /* Project object */;
+}
