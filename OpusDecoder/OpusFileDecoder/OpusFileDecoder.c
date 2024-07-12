@@ -14,7 +14,7 @@
 
 #define SAMPLE_RATE 16000
 #define HEADER_SIZE 4
-#define FRAME_MS 60 //（60 ms） frame
+#define FRAME_MS 20 //（20 ms） frame
 
 // 包头结构
 typedef struct {
@@ -50,7 +50,8 @@ int opus2wav(const char *input_filename, const char *output_filename) {
     int channels = header.channels;
     int packet_size = header.packet_length;
     int frame_size = (SAMPLE_RATE / 1000) * FRAME_MS; // Assuming 20 ms frames
-
+    fprintf(stdout, "channels:%d packet_size:%d\n", channels, packet_size);
+    
     SF_INFO sf_info;
     sf_info.samplerate = SAMPLE_RATE;
     sf_info.channels = channels;

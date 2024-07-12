@@ -17,11 +17,24 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    NSString *nsopusPath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES).firstObject stringByAppendingPathComponent:@"1.opus"];
-    NSString *wavPath = [nsopusPath stringByAppendingString:@".wav"];
-    int ret = opus2wav(nsopusPath.UTF8String, wavPath.UTF8String);
-    NSLog(@"ret:%d %@", ret, wavPath);
+    NSString *testDir = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES).firstObject stringByAppendingPathComponent:@"test-opus"];
+    [self test:testDir];
 }
 
+- (void)test:(NSString *)testDir {
+    NSArray *subPaths = [NSFileManager.defaultManager subpathsAtPath:testDir];
+    NSLog(@"-------------------begin----------------");
+    for (NSString *path in subPaths) {
+        BOOL isDir = NO;
+        NSString *opusPath = [testDir stringByAppendingPathComponent:path];
+        if ([NSFileManager.defaultManager fileExistsAtPath:opusPath isDirectory:&isDir] && !isDir && [opusPath hasSuffix:@"opus"]) {
+            NSString *wavPath = [opusPath stringByAppendingString:@".wav"];
+            int ret = opus2wav(opusPath.UTF8String, wavPath.UTF8String);
+            NSLog(@"ret:%d %@", ret, wavPath);
+        }
+    }
+    
+    NSLog(@"-------------------end----------------");
+}
 
 @end
