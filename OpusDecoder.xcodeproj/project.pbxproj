@@ -39,6 +39,9 @@
 		BF25A3EF2C28474A00C64BB5 /* sndfile.h in Headers */ = {isa = PBXBuildFile; fileRef = BF25A3EB2C28474A00C64BB5 /* sndfile.h */; };
 		BF25A3F02C28474A00C64BB5 /* libsndfile.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BF25A3EC2C28474A00C64BB5 /* libsndfile.a */; };
 		BF25A3F12C28474A00C64BB5 /* OpusFileDecoder.c in Sources */ = {isa = PBXBuildFile; fileRef = BF25A3ED2C28474A00C64BB5 /* OpusFileDecoder.c */; };
+		BF320EEC2D1FB17500666491 /* libmp3lame.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BF320EEA2D1FB17500666491 /* libmp3lame.a */; };
+		BF320EED2D1FB17500666491 /* libmp3lame.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BF320EEA2D1FB17500666491 /* libmp3lame.a */; };
+		BF320EEE2D1FB17500666491 /* lame.h in Headers */ = {isa = PBXBuildFile; fileRef = BF320EEB2D1FB17500666491 /* lame.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -102,6 +105,8 @@
 		BF25A3EC2C28474A00C64BB5 /* libsndfile.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libsndfile.a; sourceTree = "<group>"; };
 		BF25A3ED2C28474A00C64BB5 /* OpusFileDecoder.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = OpusFileDecoder.c; sourceTree = "<group>"; };
 		BF25A3F22C28476800C64BB5 /* OpusFileDecoder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = OpusFileDecoder.h; path = OpusDecoder/OpusFileDecoder/OpusFileDecoder.h; sourceTree = "<group>"; };
+		BF320EEA2D1FB17500666491 /* libmp3lame.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libmp3lame.a; sourceTree = "<group>"; };
+		BF320EEB2D1FB17500666491 /* lame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lame.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +114,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF320EED2D1FB17500666491 /* libmp3lame.a in Frameworks */,
 				BF0ADA3D2C28747F001B2C7C /* libsndfile.a in Frameworks */,
 				BF0ADA3E2C287483001B2C7C /* libopus.a in Frameworks */,
 			);
@@ -132,6 +138,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF320EEC2D1FB17500666491 /* libmp3lame.a in Frameworks */,
 				BF25A3902C266C2C00C64BB5 /* libopus.a in Frameworks */,
 				BF25A3F02C28474A00C64BB5 /* libsndfile.a in Frameworks */,
 			);
@@ -239,6 +246,7 @@
 		BF25A3712C266C2B00C64BB5 /* OpusFileDecoder */ = {
 			isa = PBXGroup;
 			children = (
+				BF320EE92D1FB17500666491 /* lame */,
 				BF25A3EA2C28474A00C64BB5 /* libsndfile-1.2.2 */,
 				BF25A3ED2C28474A00C64BB5 /* OpusFileDecoder.c */,
 				BF25A3E92C28474A00C64BB5 /* OpusFileDecoder.h */,
@@ -278,6 +286,15 @@
 			path = "libsndfile-1.2.2";
 			sourceTree = "<group>";
 		};
+		BF320EE92D1FB17500666491 /* lame */ = {
+			isa = PBXGroup;
+			children = (
+				BF320EEA2D1FB17500666491 /* libmp3lame.a */,
+				BF320EEB2D1FB17500666491 /* lame.h */,
+			);
+			path = lame;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -290,6 +307,7 @@
 				BF25A3EF2C28474A00C64BB5 /* sndfile.h in Headers */,
 				BF25A3252C2667CE00C64BB5 /* OpusDecoder.h in Headers */,
 				BF25A38D2C266C2C00C64BB5 /* opus_types.h in Headers */,
+				BF320EEE2D1FB17500666491 /* lame.h in Headers */,
 				BF25A38F2C266C2C00C64BB5 /* opus_projection.h in Headers */,
 				BF25A38C2C266C2C00C64BB5 /* opus_custom.h in Headers */,
 				BF25A38E2C266C2C00C64BB5 /* opus_defines.h in Headers */,
@@ -602,6 +620,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/OpusDecoder/OpusFileDecoder/libsndfile-1.2.2",
 					"$(PROJECT_DIR)/OpusDecoder/OpusFileDecoder/opus-1.3.1",
+					"$(PROJECT_DIR)/OpusDecoder/OpusFileDecoder/lame",
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = HL.OpusFileDecoderDemo;
@@ -639,6 +658,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/OpusDecoder/OpusFileDecoder/libsndfile-1.2.2",
 					"$(PROJECT_DIR)/OpusDecoder/OpusFileDecoder/opus-1.3.1",
+					"$(PROJECT_DIR)/OpusDecoder/OpusFileDecoder/lame",
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = HL.OpusFileDecoderDemo;
@@ -869,6 +889,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/OpusDecoder/OpusFileDecoder/opus-1.3.1",
 					"$(PROJECT_DIR)/OpusDecoder/OpusFileDecoder/libsndfile-1.2.2",
+					"$(PROJECT_DIR)/OpusDecoder/OpusFileDecoder/lame",
 				);
 				MARKETING_VERSION = 1.0;
 				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
@@ -914,6 +935,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/OpusDecoder/OpusFileDecoder/opus-1.3.1",
 					"$(PROJECT_DIR)/OpusDecoder/OpusFileDecoder/libsndfile-1.2.2",
+					"$(PROJECT_DIR)/OpusDecoder/OpusFileDecoder/lame",
 				);
 				MARKETING_VERSION = 1.0;
 				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
