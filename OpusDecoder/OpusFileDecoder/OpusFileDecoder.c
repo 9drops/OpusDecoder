@@ -127,7 +127,7 @@ END:
     return err;
 }
 
-int opus2mp3(const char *input_filename, const char *output_filename) {
+int opus2mp3(const char *input_filename, const char *output_filename, int bitrate) {
     int err = 0; // Default success
     OpusDecoder *decoder = NULL;
     lame_t lame = NULL;
@@ -185,7 +185,7 @@ int opus2mp3(const char *input_filename, const char *output_filename) {
     lame_set_in_samplerate(lame, SAMPLE_RATE);
     lame_set_out_samplerate(lame, SAMPLE_RATE);
     lame_set_num_channels(lame, channels);
-    lame_set_brate(lame, 128); //设置比特率为128kb
+    lame_set_brate(lame, bitrate > 0 ? bitrate : 24); //设置比特率，默认24kb
 
     if (lame_init_params(lame) < 0) {
         fprintf(stderr, "Error: Could not initialize LAME\n");

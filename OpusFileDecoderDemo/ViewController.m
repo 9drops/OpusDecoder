@@ -33,7 +33,7 @@
             NSString *mp3Path = [opusPath stringByAppendingString:@".mp3"];
             ret = opus2wav(opusPath.UTF8String, wavPath.UTF8String);
             NSLog(@"ret:%d %@", ret, wavPath);
-            ret = opus2mp3(opusPath.UTF8String, mp3Path.UTF8String);
+            ret = opus2mp3(opusPath.UTF8String, mp3Path.UTF8String, 24);
             NSLog(@"ret:%d %@", ret, mp3Path);
         }
     }
